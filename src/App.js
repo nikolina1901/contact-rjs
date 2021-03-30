@@ -1,14 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
+import Contact from './Components/Contact';
+
+const name = 'Nikolina 576';
+const avatar = "https://avatars.githubusercontent.com/nikolina1901";
+const status = true;
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -17,7 +17,11 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+        <Contact 
+        avatar={avatar}
+        name={name}
+        status={status}
+        />
     </div>
   );
 }
